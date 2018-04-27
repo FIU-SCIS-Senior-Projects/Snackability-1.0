@@ -1,0 +1,30 @@
+{
+  "name": "snackability-back-end",
+  "version": "1.0.0",
+  "description": "this API will drive the Snackability App and Admin portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && babel server -s -d dist",
+    "production": "npm run build && node bin/production"
+  },
+  "author": "fhern077",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "firebase": "^4.12.1",
+    "metaphone": "^1.0.3",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "nodemon": "^1.17.3"
+  }
+}
